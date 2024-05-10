@@ -7,6 +7,10 @@
     text-align: center;
     background: rgb(73,103,77);
     background: radial-gradient(circle, rgba(73,103,77,1) 0%, rgba(6,22,8,1) 100%); 
+    color:#fff;
+    box-sizing: border-box;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: "Fondamento";
  }
  
  h1{
@@ -16,5 +20,55 @@
     text-align:center;
     color:#fff;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    
  }
+
+ h2{
+   font-size:50px;
+ }
+
+
+input,
+button,
+select{
+   width:300px;
+   padding:10px;
+   margin:10px; 
+ }
+
+ label{
+   font-size:25px;
+ }
+
+ /* New styles for dropdowns */
+.dropdown-container {
+   display: inline-block;
+   margin-right: 20px; /* Adjust spacing between dropdowns */
+}
+
+/* Style for dropdown button */
+.dropdown-container select {
+   width: 300px;
+   padding: 10px;
+   margin: 10px;
+   background-color: #fff; /* Background color for dropdown button */
+   color: #000; /* Text color for dropdown button */
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+/* Style for dropdown options */
+.dropdown-container select option {
+   background-color: #fff; /* Background color for dropdown options */
+   color: #000; /* Text color for dropdown options */
+}
+
+/* Change color of dropdown options on hover */
+.dropdown-container select option:hover {
+   background-color: #ddd;
+}
+
+/* Show dropdown options on hover */
+.dropdown-container:hover select {
+   visibility: visible;
+}
