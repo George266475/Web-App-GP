@@ -24,7 +24,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h2>Build Name</h2>
+        <h2 contenteditable="true">Build Name</h2>
 
         <form>
 <!-- Dropdown 1 -->
@@ -53,6 +53,16 @@
     <br>
     <select id="oath" name="oath">
         <option value="oathless">Oathless</option>
+        <option value="silent">Silentheart (Attunementless, 75 Wep, 25 Agi, 25 Str)</option>
+        <option value="vision">Visionshaper (50 Charisma)</option>
+        <option value="dawn">Dawnwalker</option>
+        <option value="star">Starkindred (40 Str)</option>
+        <option value="contract">Contractor</option>
+        <option value="jet">Jetstriker (40 Agi)</option>
+        <option value="fade">Fadetrimmer</option>
+        <option value="link">Linkstrider</option>
+        <option value="arc">Arcwarder (20 Ftd, 20 Flame, 20 Thunder)</option>
+        <option value="blind">Blindseer (40 Wlp)</option>
     </select>
 </div>
 <br>
@@ -61,7 +71,9 @@
     <label>Weapon</label>
     <br>
     <select id="weapon" name="weapon">
-        <option value="shattered">Shattered Katana (90 Medium)</option>
+        <option value="shattered">Shattered Katana (90 Med)</option>
+        <option value="alloykatana">Alloyed Katana (75 Med)</option>
+        <option value="truespear">True Seraph Spear (90 Med)</option>
     </select>
 </div>
 
@@ -71,23 +83,31 @@
     <br>
     <select id="enchant" name="enchant">
         <option value="blazing">Blazing</option>
+        <option value="chilling">Chilling</option>
     </select>
 </div>
 
             <hr>
-            <label>327 Investment Points Remain</label>
-            <br>
-            <input placeholder="Strength">
-            <br>
-            <input placeholder="Fortitude">
-            <br>
-            <input placeholder="Agility">
-            <br>
-            <input placeholder="Intelligence">
-            <br>
-            <input placeholder="Willpower">
-            <br>
-            <input placeholder="Charisma">
+            <label id="remainingPoints">327 Investment Points Remain</label>
+<br>
+<input id="lightWeaponInput" placeholder="Light Weapon" type="number">
+<br>
+<input id="mediumWeaponInput" placeholder="Medium Weapon" type="number">
+<br>
+<input id="heavyWeaponInput" placeholder="Heavy Weapon" type="number">
+<br>
+<input id="strengthInput" placeholder="Strength" type="number">
+<br>
+<input id="fortitudeInput" placeholder="Fortitude" type="number">
+<br>
+<input id="agilityInput" placeholder="Agility" type="number">
+<br>
+<input id="intelligenceInput" placeholder="Intelligence" type="number">
+<br>
+<input id="willpowerInput" placeholder="Willpower" type="number">
+<br>
+<input id="charismaInput" placeholder="Charisma" type="number">
+
 
         </form>
 
